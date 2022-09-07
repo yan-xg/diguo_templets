@@ -1,0 +1,474 @@
+#html**************************************************************************************************
+<div class="tab_box whitebg">
+  <div class="tab_buttons">
+    <ul>
+
+      <li class='newscurrent'>运营</li>
+
+      <li>洞察</li>
+
+      <li>广告</li>
+
+      <li>营销</li>
+
+      <li>电商</li>
+
+      <li>职场</li>
+
+      <li>体验</li>
+
+      <li>分析</li>
+
+    </ul>
+  </div>
+  <div class="newstab">
+    <div class="newsitem">
+      <div class="newspic">
+        <ul>
+          <li><a href="a/yunying/135.html"><img
+                src="./img/1-19112016050G28.jpg"><span>“拼购”为何成为电商博弈的又一杀手锏</span></a></li>
+          <li><a href="a/yunying/136.html"><img
+                src="./img/1-19112016050G28.jpg"><span>无人餐厅喜忧参半，要成还得看“暖科技</span></a></li>
+
+        </ul>
+      </div>
+      <ul class="newslist">
+        <li><i></i><a href="a/yunying/138.html" title="6609首歌从KTV下架，《十年》《泡沫》均中">6609首歌从KTV下架，《十年》《泡沫》均中</a>
+          <p> 11月5日，一项热搜出现在邦哥的微博首页，并且排名一路蹿升至第一，挂在榜首直至今日凌晨：6000多首歌从KTV下架。...</p>
+        </li>
+        <li><i></i><a href="a/yunying/139.html" title="雷军：天使投资人经历让我学会找风口">雷军：天使投资人经历让我学会找风口</a>
+          <p> 人工智能时代已来，雷军为小米找的下一个风口是什么？成立相机部门能干翻华为吗? ▲雷军在在故宫发布滑盖手机...</p>
+        </li>
+        <li><i></i><a href="a/yunying/140.html" title="互联网是我们孩子的哆啦A梦还是洪水猛兽">互联网是我们孩子的哆啦A梦还是洪水猛兽</a>
+          <p> 像众多新生儿父母一样，我快要崩溃了。我儿子 Oliver 两个半月了，正处于五官感受觉醒时，只要他醒着就可能受刺...</p>
+        </li>
+        <li><i></i><a href="a/yunying/67.html" title="区块链未死！2019区块链+农业或将浴火重">区块链未死！2019区块链+农业或将浴火重</a>
+          <p> 不在沉默中爆发，就在沉默中灭亡！ 这句话来形容当下的区块链。2018年疯狂的区块链因受政策监管与打压，资本、...</p>
+        </li>
+        <li><i></i><a href="a/yunying/145.html" title="金立手机16年：一杯敬国产手机第一名，">金立手机16年：一杯敬国产手机第一名，</a>
+          <p> 23日，媒体一篇《复盘金立死亡之谜》将金立困境公之于众，文章称，金立总资产和总负债分别为人民币201.2亿和28...</p>
+        </li>
+
+      </ul>
+    </div>
+    <div class="newsitem">
+      <div class="newspic">
+        <ul>
+          <li><a href="a/dongcha/181.html"><img
+                src="uploads/allimg/c191120/15J2314U064Z-1TM4.jpg"><span>当网红本人成为网红毒瘤：Vtuber的纸片人</span></a></li>
+          <li><a href="a/dongcha/180.html"><img
+                src="uploads/allimg/c191120/15J2314T43F-152029.jpg"><span>不谋而合的“云计划”，但时代的主题已</span></a></li>
+
+        </ul>
+      </div>
+      <ul class="newslist">
+        <li><i></i><a href="a/dongcha/179.html" title="短视频下半场，版权争霸战开打，谁将首">短视频下半场，版权争霸战开打，谁将首</a>
+          <p> 在短视频时代，一个人出名可能只需要15秒。但能够让人记住的时间，也可能只有15秒。怎么办？ 2017年开始杀入短视...</p>
+        </li>
+        <li><i></i><a href="a/dongcha/178.html" title="二手平台上的“奇葩”卖家，是一门新的">二手平台上的“奇葩”卖家，是一门新的</a>
+          <p> 这是为了搞笑，还是网络行为艺术？ 在一个小型电商行业研讨会上，一位演讲人指着PPT演示中的画面笑着问道。图片...</p>
+        </li>
+        <li><i></i><a href="a/dongcha/177.html" title="互联网下半场，ARM云会是新出路吗？">互联网下半场，ARM云会是新出路吗？</a>
+          <p> 再看2018，料峭且难忘。 近二十年里，还没有这样一个年份让互联网从业者如此纠结。从年初到年尾，一个又一个风...</p>
+        </li>
+        <li><i></i><a href="a/dongcha/176.html" title="NFC对战二维码，谁能笑到最后？">NFC对战二维码，谁能笑到最后？</a>
+          <p> 双12刚过，与此前支付宝等互联网巨头唱主角不同，不少人发现，以华为Pay、小米Pay为代表的各种手机NFC支付手段，...</p>
+        </li>
+        <li><i></i><a href="a/dongcha/174.html" title="上市搁浅背后：唱吧、全民K歌们的在线">上市搁浅背后：唱吧、全民K歌们的在线</a>
+          <p> 今年5月，唱吧终于完成了将近一年半的上市辅导工作。网上有消息称，唱吧在一个月后，就会正式向证监会递交招股...</p>
+        </li>
+
+      </ul>
+    </div>
+    <div class="newsitem">
+      <div class="newspic">
+        <ul>
+          <li><a href="a/guanggao/159.html"><img
+                src="uploads/allimg/c191120/15J23145T12P-54220.jpg"><span>社交网络大败局，互联网没有赢家</span></a></li>
+          <li><a href="a/guanggao/158.html"><img
+                src="uploads/allimg/c191120/15J23145Rb40-43350.jpg"><span>共享单车，或许是中国创业史上最疯狂的</span></a></li>
+
+        </ul>
+      </div>
+      <ul class="newslist">
+        <li><i></i><a href="a/guanggao/85.html" title="亲兵撤退 资本离弃 玉红再被抛弃">亲兵撤退 资本离弃 玉红再被抛弃</a>
+          <p> 玉红，区块链三点钟社群发起人，人称红姐的区块链界大佬，去年被散户抛弃。现如今，他似乎正在被同事及资本抛...</p>
+        </li>
+        <li><i></i><a href="a/guanggao/84.html" title="Bithumb将裁员50％，还说大多员工是自愿退">Bithumb将裁员50％，还说大多员工是自愿退</a>
+          <p> 作者|吴遂心 韩国虚拟货币交易所Bithumb计划将员工人数减少 50％，此举将使其员工人数从 3 月初的 310 人减少到 150...</p>
+        </li>
+        <li><i></i><a href="a/guanggao/83.html" title="没完的ICO：这次又是IEO了 币圈融资操碎了">没完的ICO：这次又是IEO了 币圈融资操碎了</a>
+          <p> 被他这么一说。 诈骗都仿佛变成了正当的生意， 真是不可思议。 奥田英朗《无理时代》 币圈最难的并不是跟风，而...</p>
+        </li>
+        <li><i></i><a href="a/guanggao/82.html" title="比特大陆推新矿机：可挖掘隐私币，算力">比特大陆推新矿机：可挖掘隐私币，算力</a>
+          <p> 据报道，比特大陆已推出一款新型矿机Antminer Z11。据了解，该矿机可挖掘基于Equihash算法的加密数字货币，如zcash。...</p>
+        </li>
+        <li><i></i><a href="a/guanggao/81.html" title="“蓝色巨人”IBM的区块链布局：客户已超">“蓝色巨人”IBM的区块链布局：客户已超</a>
+          <p> 这家成立于1911年的伟大企业，有近百年的历史，IBM是IT领域教父级别的企业，它为世界奉献了无数伟大的发明创新：...</p>
+        </li>
+
+      </ul>
+    </div>
+    <div class="newsitem">
+      <div class="newspic">
+        <ul>
+          <li><a href="a/yingxiao/156.html"><img
+                src="uploads/allimg/c191120/15J231455P150-1K125.jpg"><span>致命拼多多</span></a></li>
+          <li><a href="a/yingxiao/155.html"><img
+                src="uploads/allimg/c191120/15J23145523010-129620.jpg"><span>“中等生”宝宝树的烦恼</span></a></li>
+
+        </ul>
+      </div>
+      <ul class="newslist">
+        <li><i></i><a href="a/yingxiao/154.html" title="多次试水母婴医疗，宝宝树能摆脱低盈利">多次试水母婴医疗，宝宝树能摆脱低盈利</a>
+          <p> 政策利好持续推动，外加市场需求强劲，母婴医疗因此得以快速发展，行业内的企业也是动作不断。 近日，据凤凰网...</p>
+        </li>
+        <li><i></i><a href="a/yingxiao/153.html" title="共享单车的印度崛起：东方不亮西方亮？">共享单车的印度崛起：东方不亮西方亮？</a>
+          <p> 2015年，随着抢眼的小黄车突现北大校园，共享单车的概念迅速被普及，玩家接连冒头，巨额投资不断涌入，和高铁、...</p>
+        </li>
+        <li><i></i><a href="a/yingxiao/152.html" title="欧阳娜娜带火了Vlog，短视频的下一个风口">欧阳娜娜带火了Vlog，短视频的下一个风口</a>
+          <p> 短视频的流行对市场进行了初步的教育，中国移动互联网用户开始从读字和读图的时代，迈向读视频的时代。 作者...</p>
+        </li>
+        <li><i></i><a href="a/yingxiao/151.html" title="揭秘恒大与贾跃亭纠纷的事实与隐秘情节">揭秘恒大与贾跃亭纠纷的事实与隐秘情节</a>
+          <p> 纷扰多时的Faraday Future（简称FF）纠纷陷入僵局，到底真相如何？自诞生之日起就引起极大关注的FF又将如何演变？界...</p>
+        </li>
+        <li><i></i><a href="a/yingxiao/150.html" title="科技大佬工资起底：杨元庆年薪超一亿元">科技大佬工资起底：杨元庆年薪超一亿元</a>
+          <p> 我们都知道马云一手创办的阿里巴巴，成为了是中国最大的网络公司，阿里巴巴拥有着亿万的活跃用户。根据阿里巴...</p>
+        </li>
+
+      </ul>
+    </div>
+    <div class="newsitem">
+      <div class="newspic">
+        <ul>
+          <li><a href="a/dianshang/229.html"><img
+                src="uploads/allimg/c191120/15J23155404640-9Ca.jpg"><span>短视频内容创业没有下半场</span></a></li>
+          <li><a href="a/dianshang/231.html"><img
+                src="uploads/allimg/c191120/15J23155609520-244064.jpg"><span>“夸夸群”满足了你的精神，也满足了他</span></a></li>
+
+        </ul>
+      </div>
+      <ul class="newslist">
+        <li><i></i><a href="a/dianshang/230.html" title="视频命长，直播命短">视频命长，直播命短</a>
+          <p> 熊猫已亡，腾讯进场。 一周前，全民对熊猫直播的哀悼声尚未消散，腾讯就推出了针对微信公众号的直播工具腾讯直...</p>
+        </li>
+        <li><i></i><a href="a/dianshang/228.html" title="共享单车生死局变 谁能先手做活">共享单车生死局变 谁能先手做活</a>
+          <p> 要不是拍摄僵尸车这个题目，我们还不知道南京江宁有一条咸周路，这里有一处共享单车的坟场，与其它不同，这是...</p>
+        </li>
+        <li><i></i><a href="a/dianshang/227.html" title="“抄袭”花粥与“做号”露露，揭开的是">“抄袭”花粥与“做号”露露，揭开的是</a>
+          <p> 凭借《盗将行》那有点儿不太通的歌词以及相对好听的旋律在主流舆论圈火了一阵花粥（当然她在小众圈已经挺火）...</p>
+        </li>
+        <li><i></i><a href="a/dianshang/226.html" title="直播之死：从“网红经济”到“平台场景">直播之死：从“网红经济”到“平台场景</a>
+          <p> 直播还会存在很久，但直播平台未必。 资本寒冬下，斗鱼将最后一张船票紧紧攥在手里，赴美上市的消息定下来后，...</p>
+        </li>
+        <li><i></i><a href="a/dianshang/225.html" title="顺丰困局：内忧不断，外患当头">顺丰困局：内忧不断，外患当头</a>
+          <p> 王卫卸任四家顺丰系公司，阿里46.6亿入股申通，摆在顺丰面前的是一个难解的局。 出品／新摘商业评论 文／皮爷...</p>
+        </li>
+
+      </ul>
+    </div>
+    <div class="newsitem">
+      <div class="newspic">
+        <ul>
+          <li><a href="a/zhichang/221.html"><img
+                src="uploads/allimg/c191120/15J2315455H60-11I45.jpg"><span>“每日拼拼”延期上线，每日优鲜是真拼</span></a></li>
+          <li><a href="a/zhichang/220.html"><img
+                src="uploads/allimg/c191120/15J231544B940-5W07.jpg"><span>流量造假危在旦夕，粉丝经济“永垂不朽</span></a></li>
+
+        </ul>
+      </div>
+      <ul class="newslist">
+        <li><i></i><a href="a/zhichang/219.html" title="小扎回母校哈佛开讲：所有社交网络必将">小扎回母校哈佛开讲：所有社交网络必将</a>
+          <p> 据国外媒体报道，脸书（Facebook）掌门人马克扎克伯格有很多心事，他已经准备好一次脱稿漫谈。 周三，这位脸书首...</p>
+        </li>
+        <li><i></i><a href="a/zhichang/218.html" title="短视频行业在中国迅速崛起＂中国风＂吹">短视频行业在中国迅速崛起＂中国风＂吹</a>
+          <p> 来自塔吉克斯坦的留学生苏福是一名短视频直播平台的网红。他将中国文化和年俗等，通过风趣的短视频方式传递给...</p>
+        </li>
+        <li><i></i><a href="a/zhichang/217.html" title="扎克伯格阐述FB社交下一站：让交流更私">扎克伯格阐述FB社交下一站：让交流更私</a>
+          <p> 社交网络下一步发展的未来在何方？6日，Facebook创始人扎克伯格给出了自己的答案。在一篇长达3200字的公开博客文章...</p>
+        </li>
+        <li><i></i><a href="a/zhichang/216.html" title="百箱齐发：2019智能音箱谁主沉浮？">百箱齐发：2019智能音箱谁主沉浮？</a>
+          <p> 2018年可谓是中国智能音箱的元年。 业内普遍认为，智能音箱是切入智能家居使用场景、并易于被用户接受的理想入...</p>
+        </li>
+        <li><i></i><a href="a/zhichang/215.html" title="体育短视频纷纷起义，体育直播走向沉沦">体育短视频纷纷起义，体育直播走向沉沦</a>
+          <p> 2019年1月20日，亚洲杯八强争夺战打响，中国男足在先失一球的情况下，依靠肖智以及郜林的进球，完成逆转好戏，最...</p>
+        </li>
+
+      </ul>
+    </div>
+    <div class="newsitem">
+      <div class="newspic">
+        <ul>
+          <li><a href="a/tiyan/211.html"><img
+                src="uploads/allimg/c191120/15J2315391R30-23WA.jpg"><span>音乐平台们正在谋划一场内容的供给侧变</span></a></li>
+          <li><a href="a/tiyan/210.html"><img src="uploads/allimg/c191120/15J23153CCF-E235.jpg"><span>“共享化妆间”悄然问世
+                是真需求还是伪</span></a></li>
+
+        </ul>
+      </div>
+      <ul class="newslist">
+        <li><i></i><a href="a/tiyan/209.html" title="喜马拉雅、懒人听书、蜻蜓：有声阅读未">喜马拉雅、懒人听书、蜻蜓：有声阅读未</a>
+          <p> 从看到听，有声阅读市场突飞猛进！年轻用户成为主体，这是央视财经《第一时间》栏目对中国有声阅读行业报道的...</p>
+        </li>
+        <li><i></i><a href="a/tiyan/208.html" title="中移动迎来隔壁大楼的帅，5G和混改跟着">中移动迎来隔壁大楼的帅，5G和混改跟着</a>
+          <p> 多情自古伤离别，中国移动又到了换帅的季节。 3月4日上午，北京金融街春光明媚，在中国电信大楼前，一群员工正...</p>
+        </li>
+        <li><i></i><a href="a/tiyan/207.html" title="游戏版号审批反复，去年网易净利润下降">游戏版号审批反复，去年网易净利润下降</a>
+          <p> 作者 / 好奇心日报 2 月 22 日，网易公布了截止 2018 年 12 月 31 日的四季度财报，其两大支柱性业务游戏和电商虽然营...</p>
+        </li>
+        <li><i></i><a href="a/tiyan/206.html" title="滴滴“官宣”巨亏——是卖惨，还是真难">滴滴“官宣”巨亏——是卖惨，还是真难</a>
+          <p> 发展会掩盖一切问题，直到狂奔的脚步停下。 2月15日，滴滴CEO程维对外表示，公司将做好过冬准备，并将对非主业进...</p>
+        </li>
+        <li><i></i><a href="a/tiyan/205.html" title="小黄车们的命：押金难退成共享家族“职">小黄车们的命：押金难退成共享家族“职</a>
+          <p> 人们对ofo小黄车的积怨终于爆发了。 前不久，ofo小黄车用户排队退押金一事引起了轩然大波。有数百名用户不惧严寒...</p>
+        </li>
+
+      </ul>
+    </div>
+    <div class="newsitem">
+      <div class="newspic">
+        <ul>
+          <li><a href="a/fenxi/191.html"><img
+                src="uploads/allimg/c191120/15J23149296410-10Wc.jpg"><span>凉透的直播，2019年会好吗？</span></a></li>
+          <li><a href="a/fenxi/190.html"><img
+                src="uploads/allimg/c191120/15J231492T520-c319.jpg"><span>野马财经李晓晔：80后内容创业者背后不</span></a></li>
+
+        </ul>
+      </div>
+      <ul class="newslist">
+        <li><i></i><a href="a/fenxi/189.html" title="&quot;播放量显示&quot;会完全退出在线视频">&quot;播放量显示&quot;会完全退出在线视频</a>
+          <p> 1月9日，优酷微博官宣取消全站前端视频播放量显示，是继爱奇艺之后的第二个在线视频巨头主动取消播放量的前端...</p>
+        </li>
+        <li><i></i><a href="a/fenxi/188.html" title="从刷墙到刷手机屏幕，互联网消费下沉">从刷墙到刷手机屏幕，互联网消费下沉</a>
+          <p> 从刷墙到刷手机屏幕，中国科技公司攻占乡镇市场只用了四年时间。 2014年前后城市互联网人口红利逐渐消失，广袤...</p>
+        </li>
+        <li><i></i><a href="a/fenxi/187.html" title="随着优酷关闭前台播放量，流量时代也走">随着优酷关闭前台播放量，流量时代也走</a>
+          <p> 破除喧嚣，回归本心。 1月18日，优酷在新发表的声明中这样说。声明中称，优酷表示将全站关闭前台播放量显示，而...</p>
+        </li>
+        <li><i></i><a href="a/fenxi/186.html" title="降价是止痛药，但不是抑制iPhone下滑的解">降价是止痛药，但不是抑制iPhone下滑的解</a>
+          <p> 美国投行Wedbush分析师丹尼尔艾维斯14日在报告中称，未来数月iPhone在中国将大幅降价。他在报告中称：我们预计，在...</p>
+        </li>
+        <li><i></i><a href="a/fenxi/185.html" title="易鑫姜东：寒冬中亏损不会死，现金流断">易鑫姜东：寒冬中亏损不会死，现金流断</a>
+          <p> 易鑫集团执行董事/总裁姜东 今年6月，登陆港交所的半年之后，易鑫集团做了一次战略转型。原本作为重点业务支撑...</p>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+#css************************************************************************
+/*tab_buttons*/
+.tab_buttons {
+	margin-bottom: 10px;
+	width: 100%;
+	overflow: hidden;
+	border-bottom: #e4e3e3 1px solid;/* position: relative; */
+}
+.tab_buttons li {
+	display: block;
+	font-size: 16px;
+	line-height: 40px;
+	float: left;
+	width: 100px;
+	text-align: center;
+	position: relative;
+	cursor: pointer
+}
+.newscurrent:after {
+	content: "";
+	background: #000;
+	width: 100px;
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.newsitem {
+	display: none;
+}
+.newsitem:nth-child(1) {
+	display: block;
+}
+/*tab_box*/
+.whitebg {
+	background: #fff;
+	border-radius: 3px;
+	padding: 20px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.tab_box {
+	clear: both;
+	position: relative;
+}
+.newslist {
+	float: right;
+	width: 66%
+}
+.newslist li {
+	overflow: hidden;
+	line-height: 32px;
+	padding: 0 20px 10px 20px;
+}
+.newslist li a {
+	height: 32px;
+}
+.newslist li img {
+	width: 100%
+}
+.newslist li {
+	height: 22px;
+}
+.newslist li:hover {
+	height: 100%;
+	background: #f7f7f7
+}
+.newslist li:hover a {
+	color: #000;
+	font-weight: bold
+}
+.newslist li:hover i {
+	background: #222;
+}
+.newslist li:nth-child(1) {
+	height: 100%;
+	background: #f7f7f7
+}
+.newslist li:nth-child(1) a {
+	color: #000;
+	font-weight: bold
+}
+.newslist li:nth-child(1) i {
+	background: #9a9a9a;
+}
+.newslist:hover li:nth-child(1) {
+	height: 22px;
+	background: none;
+}
+.newslist:hover li:nth-child(1) a {
+	color: #333;
+	font-weight: normal
+}
+.newslist:hover li:nth-child(1) i {
+	background: #9a9a9a;
+}
+.newslist:hover li:nth-child(1):hover {
+	height: 100%;
+	background: #f7f7f7;
+}
+.newslist:hover li:nth-child(1):hover a {
+	color: #000;
+	font-weight: bold
+}
+.newslist:hover li:nth-child(1):hover i {
+	background: #222;
+}
+.newslist p {
+	line-height: 24px;
+	font-size: 14px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	height: 48px;
+}
+.newspic {
+	float: left;
+	width: 32%;
+	height: 218px;
+	overflow: hidden;
+	position: relative;
+}
+.newspic ul {
+	overflow: hidden;
+}
+.newspic li {
+	height: 100px;
+	position: relative;
+	background: rgba(0,0,0,1);
+	overflow: hidden;
+	margin-bottom: 10px;
+	border-radius: 3px
+}
+.newspic li a {
+	display: block;
+	overflow: hidden
+}
+.newspic img {
+	height: 100%;
+	width: 100%;
+	opacity: .7;
+	-moz-transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	transition: all 0.5s;
+}
+.newspic span {
+	bottom: 0;
+	position: absolute;
+	bottom: 30%;
+	left: 0;
+	right: 0;
+	color: #FFF;
+	text-align: center;
+	font-size: 15px;
+	padding: 0 40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-height: 22px;
+}
+.newspic li:hover img {
+	opacity: .9;
+	transform: scale(1.1);
+}
+.newsitem ul li i {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: #9a9a9a;
+	float: left;
+	margin-top: 6px;
+	margin-right: 20px;
+	position: relative;
+	font-style: normal
+}
+.newsitem ul li i::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 9px;
+	color: #fff;
+	line-height: 20px;
+	width: 20px;
+	text-align: center
+}
+.newsitem ul li:first-child i {
+	background: #222;
+}
+.newsitem ul li:first-child i::before {
+	content: "1";
+}
+.newsitem ul li:nth-child(2) i::before {
+	content: "2";
+}
+.newsitem ul li:nth-child(3) i::before {
+	content: "3";
+}
+.newsitem ul li:nth-child(4) i::before {
+	content: "4";
+}
+.newsitem ul li:nth-child(5) i::before {
+	content: "5";
+}
+#js**********************************************************************************
+//tab
+  $('.tab_buttons li').click(function(){
+    $(this).addClass('newscurrent').siblings().removeClass('newscurrent');
+    $('.newstab>div:eq('+$(this).index()+')').show().siblings().hide();
+    });

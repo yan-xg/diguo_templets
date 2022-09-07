@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>[!--pagetitle--] - <?=$public_r[sitename]?></title>
+    <meta name="keywords" content="[!--pagekey--]" />
+    <meta name="description" content="[!--pagedes--]" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="[!--news.url--]skin/24/css/base.css" rel="stylesheet">
+    <link href="[!--news.url--]skin/24/css/m.css" rel="stylesheet">
+    <link href="[!--news.url--]skin/24/css/swiper.min.css" rel="stylesheet">
+    <script src="[!--news.url--]skin/24/js/jquery-1.8.3.min.js"></script>
+    <script src="[!--news.url--]skin/24/js/comm.js"></script>
+    <script type="text/javascript" src="[!--news.url--]skin/24/js/ajax.js"></script>
+    <link href="[!--news.url--]skin/24/css/shCoreDefault.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="[!--news.url--]skin/24/js/shCore.js"></script>
+    <script type="text/javascript">
+     SyntaxHighlighter.all();
+    </script>
+</head>
+<body>
+[!--temp.header--]
+<main>
+  <div class="lbox">
+    <div class="weizhi">您现在的位置是：[!--newsnav--]</div>
+    <article>
+      <h1>[!--pagetitle--]</h1>
+      <div class="wz_info"> <span class="wz_time">[!--newstime--]</span><span class="wz_time">浏览量:[!--onclick--]<script src=[!--news.url--]e/public/ViewClick/?classid=[!--classid--]&id=[!--id--]></script></span> </div>
+      <div class="wz_smalltext">[!--pagedes--]</div>
+      <div class="content">
+          [!--newstext--]
+      </div>
+      <div class="wz_zhuanzai">
+        <p>所有文章未经授权禁止转载、摘编、复制或建立镜像，违规转载法律必究。</p>
+      </div>
+      <div class="tags"> 相关标签：
+          <?php
+          $fr=$empire->fetch1("select infotags from {$dbtbpre}ecms_news_data_{$navinfor[stb]} where id=$navinfor[id]");
+          $infotags=$fr[infotags];
+          $tag='';
+          $t=explode(',',$infotags);
+          $d=count($t);
+          for($i=0;$i<$d;$i++)
+          {
+              if($t[$i])
+              {
+                  $tagslink="/tag/".urlencode($t[$i])."/";
+                  $tag.="<a href=$tagslink target=_blank>".$t[$i]."</a> ";
+              }
+          }
+          echo $tag;
+          ?>
+      </div>
+    <div class="info-pre-next">
+      <p>上一篇:[!--info.pre--]</p>
+      <p>下一篇:[!--info.next--]</p>
+    </div>  
+      <div class="ad"><a href="javascript:;" target="_blank"><img src="[!--news.url--]skin/24/img/ad3.jpg" alt=""></a></div>
+      <div class="wz_tuijian">
+         <p>推荐阅读</p>
+         <ul>
+             [e:loop={'1,2,3',6,'newstime DESC'}]
+             <li>
+                 <a href="<?=$bqr[titleurl]?>" target="_blank">
+                     <i><img src="<?=$bqr[titlepic]?:$public_r[newsurl].'e/data/images/notimg.gif'?>" alt="<?=$bqr[title]?>"></i>
+                     <h2><?=$bqr[title]?></h2>
+                     <span><?=date('Y-m-d',$bqr[newstime])?></span>
+                 </a>
+             </li>
+             [/e:loop]
+         </ul>
+      </div>
+    </article>
+  </div>
+  <aside class="rbox">
+     <div class="about">
+        <ul>
+            [e:loop={'1,2,3','6,10','newstime DESC'}]
+            <li><a href="<?=$bqr[titleurl]?>" title="<?=$bqr[title]?>" target="_blank"><?=$bqr[title]?></a></li>
+            [/e:loop]
+        </ul>
+     </div> 
+  </aside>
+</main>
+[!--temp.footer--]
+</body>
+</html>

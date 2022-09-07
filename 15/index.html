@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="renderer" content="webkit">
+  <title>[!--pagetitle--]</title>
+  <meta name="keywords" content="[!--pagekey--]" />
+  <meta name="description" content="[!--pagedes--]" />
+  <link rel="stylesheet" rev="stylesheet" href="[!--news.url--]skin/15/css/animate.css" type="text/css" media="all" />
+  <link href="[!--news.url--]skin/15/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <script src="[!--news.url--]skin/15/js/jquery-2.2.4.min.js"></script>
+  <script src="[!--news.url--]skin/15/js/zblogphp.js"></script>
+  <script src="[!--news.url--]skin/15/c_html_js_add.php"></script>
+  <script src="[!--news.url--]skin/15/js/swiper.min.js"></script>
+  <link href="[!--news.url--]skin/15/css/style.css" type="text/css" media="all" rel="stylesheet" />
+  <!--[if lt IE 9]>
+    <script src="[!--news.url--]skin/15/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body class="home-index">
+<!--头部开始-->
+[!--temp.header--]
+<!--头部结束-->
+
+<div class="wrapper-ban">
+  <div class="swiper-main">
+    <div class="swiper-container swiper-home">
+      <div class="swiper-wrapper">
+
+        [e:loop={'1,2,3,4',3,'isgood=1','newstime DESC'}]
+        <div class="swiper-slide">
+          <a href="<?=$bqr[titleurl]?>" target="_blank">
+            <img src="<?=$bqr[titlepic]?>" class="swiper-img" alt="<?=$bqr[title]?>" title="<?=$bqr[title]?>" style="width: 100%;height: 240px;"></a>
+        </div>
+        [/e:loop]
+
+      </div>
+      <div class="swiper-pagination swiper-home-pagination"></div>
+    </div>
+  </div>
+</div>
+<div class="container wrapper">
+  <div class="hot-news">
+    <!--hot-news模块内容-->
+    <section class="hot-news-title">
+      <h3>精选导读</h3>
+    </section>
+    [e:loop={'1,2,3,4','3,1','isgood=1','newstime DESC'}]
+    <div class="hot_news_img">
+      <div class="hot_pic">
+        <a href="<?=$bqr[titleurl]?>">
+          <img src="<?=$bqr[titlepic]?:$public_r[newsurl].'e/data/images/notimg.gif'?>" alt="<?=$bqr[title]?>" /></a>
+      </div>
+      <h3 class="hot_h4">
+        <a class="red" href="<?=$bqr[titleurl]?>"><?=$bqr[title]?></a></h3>
+      <p class="hot_text_ms"><?=$bqr[smalltext]?>...</p>
+      <div class="hot_text_more">
+        <a href="<?=$bqr[titleurl]?>" class="button3">阅读详细</a></div>
+    </div>
+    [/e:loop]
+
+    <ul class="hot_news_list">
+      [e:loop={'1,2,3,4',6,'newstime DESC'}]
+      <li>
+        <a href="<?=$bqr[titleurl]?>" title="<?=$bqr[title]?>">
+          <time class="l">
+                <span class="hot_li_data">
+                  <em><?=date('d',$bqr[newstime])?></em><?=date('Y-m',$bqr[newstime])?></span></time>
+          <h3><?=$bqr[title]?></h3>
+          <p class="hot_li_ms"><?=$bqr[smalltext]?>...</p></a>
+      </li>
+      [/e:loop]
+    </ul>
+  </div>
+
+
+  <div class="cat2_list box-shadow wow fadeInDown" data-wow-delay="0.25s">
+    <div class="tab-list-title">
+      <ul>
+        <li class="active">
+          <a href="javascript:void(0)">新闻</a></li>
+      </ul>
+    </div>
+    <div class="tab-box-list">
+      <div class="tab-list-item" style="display: block;">
+        [e:loop={1,9,'onclick DESC'}]
+        <article class="mx3-hentry nba">
+          <figure class="mx3-thumbnail">
+            <a href="<?=$bqr[titleurl]?>">
+              <img src="<?=$bqr[titlepic]?:$public_r[newsurl].'e/data/images/notimg.gif'?>" width="103" height="78" alt="<?=$bqr[title]?>"></a>
+          </figure>
+          <header class="mx3-header">
+            <h2 class="mx3-entry-title">
+              <a href="<?=$bqr[titleurl]?>" title="<?=$bqr[title]?>" rel="bookmark"><?=$bqr[title]?></a></h2>
+          </header>
+          <div class="mx3-entry-content">
+                <span class="mx3-entry-meta">
+                  <span class="mx3-date">
+                    <i class="fa fa-calendar"></i><?=date('Y/m',$bqr[newstime])?></span>
+                  <span class="mx3-views">
+                    <i class="fa fa-eye"></i><?=$bqr[onclick]?></span>
+                </span>
+          </div>
+        </article>
+        [/e:loop]
+      </div>
+    </div>
+  </div>
+
+  <div class="cat2_list box-shadow wow fadeInDown" data-wow-delay="0.25s">
+    <div class="tab-list-title">
+      <ul>
+        <li class="active">
+          <a href="javascript:void(0)">科技</a></li>
+      </ul>
+    </div>
+    <div class="tab-box-list">
+      <div class="tab-list-item" style="display: block;">
+        [e:loop={2,9,'onclick DESC'}]
+        <article class="mx3-hentry nba">
+          <figure class="mx3-thumbnail">
+            <a href="<?=$bqr[titleurl]?>">
+              <img src="<?=$bqr[titlepic]?:$public_r[newsurl].'e/data/images/notimg.gif'?>" width="103" height="78" alt="<?=$bqr[title]?>"></a>
+          </figure>
+          <header class="mx3-header">
+            <h2 class="mx3-entry-title">
+              <a href="<?=$bqr[titleurl]?>" title="<?=$bqr[title]?>" rel="bookmark"><?=$bqr[title]?></a></h2>
+          </header>
+          <div class="mx3-entry-content">
+                <span class="mx3-entry-meta">
+                  <span class="mx3-date">
+                    <i class="fa fa-calendar"></i><?=date('Y/m',$bqr[newstime])?></span>
+                  <span class="mx3-views">
+                    <i class="fa fa-eye"></i><?=$bqr[onclick]?></span>
+                </span>
+          </div>
+        </article>
+        [/e:loop]
+      </div>
+    </div>
+  </div>
+
+  <div class="cat2_list box-shadow wow fadeInDown" data-wow-delay="0.25s">
+    <div class="tab-list-title">
+      <ul>
+        <li class="active">
+          <a href="javascript:void(0)">动态</a></li>
+      </ul>
+    </div>
+    <div class="tab-box-list">
+      <div class="tab-list-item" style="display: block;">
+        [e:loop={3,9,'onclick DESC'}]
+        <article class="mx3-hentry nba">
+          <figure class="mx3-thumbnail">
+            <a href="<?=$bqr[titleurl]?>">
+              <img src="<?=$bqr[titlepic]?:$public_r[newsurl].'e/data/images/notimg.gif'?>" width="103" height="78" alt="<?=$bqr[title]?>"></a>
+          </figure>
+          <header class="mx3-header">
+            <h2 class="mx3-entry-title">
+              <a href="<?=$bqr[titleurl]?>" title="<?=$bqr[title]?>" rel="bookmark"><?=$bqr[title]?></a></h2>
+          </header>
+          <div class="mx3-entry-content">
+                <span class="mx3-entry-meta">
+                  <span class="mx3-date">
+                    <i class="fa fa-calendar"></i><?=date('Y/m',$bqr[newstime])?></span>
+                  <span class="mx3-views">
+                    <i class="fa fa-eye"></i><?=$bqr[onclick]?></span>
+                </span>
+          </div>
+        </article>
+        [/e:loop]
+      </div>
+    </div>
+  </div>
+
+  <div class="side-hot">
+    <div class="home-top-title wow fadeInDown">
+      <span>最近更新</span></div>
+    <div class="home-main index-page">
+      <!--页面主体信息-->
+      [e:loop={'1,2,3,4',12,'newstime DESC'}]
+      <article class="post-list wow fadeInDown" id="list2">
+        <div class="post-item-box goods-box">
+          <div class="post-img-wp">
+            <a href="<?=$bqr[titleurl]?>" target="_blank">
+              <img class="goods-img" src="<?=$bqr[titlepic]?:$public_r[newsurl].'e/data/images/notimg.gif'?>" alt="<?=$bqr[title]?>" /></a>
+          </div>
+          <div class="post-user-info">
+            <a>
+              <span class="post-fbtime"><?=date('Y-m-d',$bqr[newstime])?></span></a>
+          </div>
+          <div class="post-title">
+            <h3>
+              <a href="<?=$bqr[titleurl]?>" title="<?=$bqr[title]?>" target="_blank"><?=$bqr[title]?></a></h3>
+          </div>
+          <div class="post-item-meta">
+            <a class="post-item-catename" href="<?=$bqr[classpath]?>">
+              <i class="fa fa-columns"></i><?=$bqr[classname]?></a>
+            <span class="post-item-viewnums">
+                  <i class="fa fa-eye"></i><?=$bqr[onclick]?>次</span>
+          </div>
+        </div>
+      </article>
+      [/e:loop]
+    </div>
+  </div>
+
+  <div class="link-box box-shadow wow fadeInDown">
+    <section class="sidebar_widget wow fadeInDown" id="divTags">
+      <h3 class="sidebar_title">标签列表</h3>
+      <ul class="sidebar_content divTags">
+        [e:loop={"select * from [!db.pre!]enewstags order by tagid DESC limit 50",0,24,0}]
+        <li><a href="/tag/<?=$bqr['tagname']?>/" target="_blank" style="width: 13%;"><?=$bqr['tagname']?></a></li>
+        [/e:loop]
+      </ul>
+    </section>
+  </div>
+
+  <div class="link-box box-shadow wow fadeInDown">
+    <section class="hot-news-title">
+      <h3>友情链接</h3></section>
+    <ul id="link-home">
+      [e:loop={'select * from [!db.pre!]enewslink where checked=1 order by myorder',20,24,0}]
+      <li><a href="<?=$bqr[lurl]?>" title="<?=$bqr[lname]?>" target="_blank"><?=$bqr[lname]?></a></li>
+      [/e:loop]
+    </ul>
+    </section>
+  </div>
+</div>
+<script src='[!--news.url--]skin/15/js/jquery.ias.min.js'></script>
+<!--底部开始-->
+[!--temp.footer--]
+<!--底部结束-->
+
+<div class="none">
+  <script src="[!--news.url--]skin/15/js/custom.js"></script>
+  <script src="[!--news.url--]skin/15/js/sticky-sidebar.js"></script>
+  <script>var swiper = new Swiper('.swiper-home', {
+    pagination: '.swiper-home-pagination',
+    nextButton: '.swiper-home-button-next',
+    prevButton: '.swiper-home-button-prev',
+    paginationClickable: true,
+    centeredSlides: true,
+    autoplay: 5000,
+    autoplayDisableOnInteraction: false,
+    lazyLoading: true,
+    mousewheelControl: false,
+    keyboardControl: true,
+    loop: true
+  });</script>
+  <script src="[!--news.url--]skin/15/js/wow.min.js"></script>
+</div>
+</body>
+
+</html>

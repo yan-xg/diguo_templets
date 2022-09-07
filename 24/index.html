@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>[!--pagetitle--]</title>
+    <meta name="description" content="[!--pagedes--]" />
+    <meta name="keywords" content="[!--pagekey--]" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="[!--news.url--]skin/24/css/base.css" rel="stylesheet">
+    <link href="[!--news.url--]skin/24/css/m.css" rel="stylesheet">
+    <link href="[!--news.url--]skin/24/css/swiper.min.css" rel="stylesheet">
+    <script src="[!--news.url--]skin/24/js/jquery-1.8.3.min.js"></script>
+    <script src="[!--news.url--]skin/24/js/comm.js"></script>
+    <script src="[!--news.url--]skin/24/js/swiper.min.js"></script>
+</head>
+<body>
+[!--temp.header--]
+<main>
+    <div class="lbox">
+        <div class="banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    [e:loop={'1,2,3',3,0,0,'isgood=1','newstime DESC'}]
+                    <div class="swiper-slide">
+                        <a href="<?=$bqr[titleurl]?>" target="_blank">
+                            <img src="<?=$bqr[titlepic]?:$public_r[newsurl].'e/data/images/notimg.gif'?>" alt="<?=$bqr[title]?>">
+                            <section><h4><?=$bqr[title]?></h4></section>
+                        </a>
+                    </div>
+                    [/e:loop]
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <script>
+                //banner
+                var swiper = new Swiper('.swiper-container', {
+                    pagination: '.swiper-pagination',
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+                    paginationClickable: true,
+                    spaceBetween: 100,
+                    centeredSlides: true,
+                    autoplay: 8000,
+                    autoplayDisableOnInteraction: false,
+                });
+            </script>
+        </div>
+        <!-- banner end-->
+        <div class="headline">
+            <ul>
+                [e:loop={'1,2,3','3,2',0,0,'isgood=1','newstime DESC'}]
+                <li>
+                    <a href="<?=$bqr[titleurl]?>" title="<?=$bqr[title]?>">
+                        <img src="<?=$bqr[titlepic]?:$public_r[newsurl].'e/data/images/notimg.gif'?>" alt="<?=$bqr[title]?>">
+                        <span><h4><?=$bqr[title]?></h4></span>
+                    </a>
+                </li>
+                [/e:loop]
+            </ul>
+        </div>
+        <!--headline end-->
+
+        <div class="tab_box whitebg">
+            <div class="tab_buttons">
+                <ul>
+                    <li class='newscurrent'>新闻</li>
+                    <li>财经</li>
+                    <li>疫情动态</li>
+                </ul>
+            </div>
+
+            <div class="newstab">
+                <div class="newsitem">
+                    <div class="newspic">
+                        <ul>
+                            [e:loop={1,2,'newstime DESC'}]
+                            <li>
+                                <a href="<?=$bqr[titleurl]?>">
+                                    <img src="<?=$bqr[titlepic]?:$public_r[newsurl].'e/data/images/notimg.gif'?>"><span><?=$bqr[title]?></span>
+                                </a>
+                            </li>
+                            [/e:loop]
+                        </ul>
+                    </div>
+                    <ul class="newslist">
+                        [e:loop={1,'2,5','newstime DESC'}]
+                        <li><i></i><a href="<?=$bqr[titleurl]?>" title="<?=$bqr[title]?>"><?=$bqr[title]?></a>
+                            <p><?=$bqr[smalltext]?>...</p>
+                        </li>
+                        [/e:loop]
+                    </ul>
+                </div>
+                <div class="newsitem">
+                    <div class="newspic">
+                        <ul>
+                            [e:loop={2,2,'newstime DESC'}]
+                            <li>
+                                <a href="<?=$bqr[titleurl]?>">
+                                    <img src="<?=$bqr[titlepic]?:$public_r[newsurl].'e/data/images/notimg.gif'?>"><span><?=$bqr[title]?></span>
+                                </a>
+                            </li>
+                            [/e:loop]
+                        </ul>
+                    </div>
+                    <ul class="newslist">
+                        [e:loop={2,'2,5','newstime DESC'}]
+                        <li><i></i><a href="<?=$bqr[titleurl]?>" title="<?=$bqr[title]?>"><?=$bqr[title]?></a>
+                            <p><?=$bqr[smalltext]?>...</p>
+                        </li>
+                        [/e:loop]
+                    </ul>
+                </div>
+                <div class="newsitem">
+                    <div class="newspic">
+                        <ul>
+                            [e:loop={3,2,'newstime DESC'}]
+                            <li>
+                                <a href="<?=$bqr[titleurl]?>">
+                                    <img src="<?=$bqr[titlepic]?:$public_r[newsurl].'e/data/images/notimg.gif'?>"><span><?=$bqr[title]?></span>
+                                </a>
+                            </li>
+                            [/e:loop]
+                        </ul>
+                    </div>
+                    <ul class="newslist">
+                        [e:loop={3,'2,5','newstime DESC'}]
+                        <li><i></i><a href="<?=$bqr[titleurl]?>" title="<?=$bqr[title]?>"><?=$bqr[title]?></a>
+                            <p><?=$bqr[smalltext]?>...</p>
+                        </li>
+                        [/e:loop]
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+        <div class="h_title">最新文章</div>
+        <div class="blogs">
+            <ul>
+                [e:loop={'1,2,3',15,'newstime DESC'}]
+                <li class="blogs_list"> <a href="<?=$bqr[titleurl]?>" target="_blank"><i><img src="<?=$bqr[titlepic]?:$public_r[newsurl].'e/data/images/notimg.gif'?>" alt="<?=$bqr[title]?>"></i>
+                    <h2><?=$bqr[title]?></h2></a>
+                    <p><?=$bqr[smalltext]?>...</p>
+                    <div class="blogs_writer"><?=$bqr[onclick]?><span class="blogs_time"><?=date('Y-m-d',$bqr[newstime])?></span></div>
+                    <!--          <div class="blogs_tags"><a href='<?=$bqr[classpath]?>' target='_blank'><?=$bqr[classname]?></a></div>-->
+                    <!--          <span class="blogs_lm"><a href="<?=$bqr[classpath]?>" target="_blank"><?=$bqr[classname]?></a></span>-->
+                </li>
+                [/e:loop]
+
+            </ul>
+        </div>
+    </div>
+    <aside class="rbox">
+        <div class="news_kx">
+            <h2>7x24小时头条</h2>
+            <ul>
+                [e:loop={'1,2,3','15,5','newstime DESC'}]
+                <li><i></i><a href="<?=$bqr[titleurl]?>" target="_blank"><?=$bqr[title]?></a><span><?=date('Y-m-d',$bqr[newstime])?></span></li>
+                [/e:loop]
+            </ul>
+        </div>
+        <div class="lm_hot">
+            <p class="h_title">精选标签</p>
+            <ul>
+                [e:loop={"select * from [!db.pre!]enewstags order by tagid DESC limit 30",0,24,0}]
+                <a href="/tag/<?=$bqr['tagname']?>/" target="_blank"><?=$bqr['tagname']?></a>
+                [/e:loop]
+            </ul>
+        </div>
+
+        <div class="hot_news">
+            <p class="h_title">文章热榜</p>
+            <ul>
+                [e:loop={"select * from [!db.pre!]ecms_news order by onclick desc limit 10",0,24,0}]
+                <li>
+                    <a href="<?=$bqr[titleurl]?>" title="<?=$bqr[title]?>" target="_blank">
+                        <i><img src="<?=$bqr[titlepic]?:$public_r[newsurl].'e/data/images/notimg.gif'?>" alt="<?=$bqr[title]?>"></i>
+                        <h2><?=$bqr[title]?></h2>
+                    </a>
+                    <span><?=date('Y-m-d',$bqr[newstime])?></span>
+                </li>
+                [/e:loop]
+            </ul>
+        </div>
+    </aside>
+</main>
+<div class="clear"></div>
+<div class="links">
+    <ul class="box">
+        <p>友情链接</p>
+        [e:loop={'select * from [!db.pre!]enewslink where checked=1 order by myorder',20,24,0}]
+        <li><a href="<?=$bqr[lurl]?>" title="<?=$bqr[lname]?>" target="_blank"><?=$bqr[lname]?></a></li>
+        [/e:loop]
+    </ul>
+</div>
+[!--temp.footer--]
+</body>
+</html>

@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html>
+<head>
+     <meta charset="utf-8">
+    <title>[!--pagetitle--] - <?=$public_r[sitename]?></title>
+    <meta name="keywords" content="[!--pagekey--]" />
+    <meta name="description" content="[!--pagedes--]" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="[!--news.url--]skin/24/css/base.css" rel="stylesheet">
+    <link href="[!--news.url--]skin/24/css/m.css" rel="stylesheet">
+    <link href="[!--news.url--]skin/24/css/swiper.min.css" rel="stylesheet">
+    <script src="[!--news.url--]skin/24/js/jquery-1.8.3.min.js"></script>
+    <script src="[!--news.url--]skin/24/js/comm.js"></script>
+</head>
+<body>
+[!--temp.header--]
+<main>
+  <div class="lbox">
+    <div class="weizhi">您现在的位置是：[!--newsnav--]</div>
+    <div class="blogs">
+      <ul>
+          [!--empirenews.listtemp--]<!--list.var1-->[!--empirenews.listtemp--]
+
+          <!--列表内容模板-->
+          <li class="blogs_list"> <a href="[!--titleurl--]" target="_blank"><i><img src="[!--titlepic--]" alt="[!--title--]"></i>
+              <h2>[!--title--]</h2></a>
+              <p>[!--smalltext--]...</p>
+              <div class="blogs_writer">[!--onclick--]<span class="blogs_time">[!--newstime--]</span></div>
+          </li>
+
+      </ul>
+    </div>
+    <div class="pagelist">
+        [!--show.listpage--]
+    </div>
+  </div>
+  <aside class="rbox">
+    <div class="hot_news">
+      <p class="h_title">文章热榜</p>
+      <ul>
+          [e:loop={"select * from [!db.pre!]ecms_news order by onclick desc limit 10",0,24,0}]
+          <li>
+              <a href="<?=$bqr[titleurl]?>" title="<?=$bqr[title]?>" target="_blank">
+                  <i><img src="<?=$bqr[titlepic]?:$public_r[newsurl].'e/data/images/notimg.gif'?>" alt="<?=$bqr[title]?>"></i>
+                  <h2><?=$bqr[title]?></h2>
+              </a>
+              <span><?=date('Y-m-d',$bqr[newstime])?></span>
+          </li>
+          [/e:loop]
+      </ul>
+    </div>
+  </aside>
+</main>
+[!--temp.footer--]
+</body>
+</html>

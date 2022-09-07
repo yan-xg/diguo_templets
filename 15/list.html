@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="renderer" content="webkit">
+  <title>[!--pagetitle--] - <?=$public_r[sitename]?></title>
+  <meta name="keywords" content="[!--pagekey--]" />
+  <meta name="description" content="[!--pagedes--]" />
+  <link rel="stylesheet" rev="stylesheet" href="[!--news.url--]skin/15/css/animate.css" type="text/css" media="all" />
+  <link href="[!--news.url--]skin/15/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <script src="[!--news.url--]skin/15/js/jquery-2.2.4.min.js"></script>
+  <script src="[!--news.url--]skin/15/js/zblogphp.js"></script>
+  <script src="[!--news.url--]skin/15/c_html_js_add.php"></script>
+  <link href="[!--news.url--]skin/15/css/style.css" type="text/css" media="all" rel="stylesheet" />
+  <!--[if lt IE 9]>
+    <script src="[!--news.url--]skin/15/js/html5shiv.js"></script>
+  <![endif]--></head>
+
+<body class="home-category">
+<!--头部开始-->
+[!--temp.header--]
+<!--头部结束-->
+<div class="container place">
+  <nav class="place_nav box-shadow">您现在的位置：<i class="fa fa-home"></i>[!--newsnav--]</nav>
+</div>
+<div class="container wrapper category-wrap">
+  <div class="side-hot wrap-multi">
+    <div class="home-main">
+      <!--页面主体信息-->
+      [!--empirenews.listtemp--]<!--list.var1-->[!--empirenews.listtemp--]
+
+      <!--列表内容模板-->
+      <article class="post-list wow fadeInDown" id="list2">
+        <div class="post-item-box goods-box">
+          <div class="post-img-wp">
+            <a href="[!--titleurl--]" target="_blank">
+              <img class="goods-img" src="[!--titlepic--]" alt="[!--title--]" /></a>
+          </div>
+          <div class="post-user-info">
+            <a>
+              <span class="post-fbtime">[!--newstime--]</span></a>
+          </div>
+          <div class="post-title">
+            <h3>
+              <a href="[!--titleurl--]" title="[!--title--]" target="_blank">[!--title--]</a></h3>
+          </div>
+          <div class="post-item-meta">
+            <a class="post-item-catename" href="[!--titleurl--]">
+              <i class="fa fa-columns"></i>[!--class.name--]</a>
+            <span class="post-item-viewnums">
+                  <i class="fa fa-eye"></i>[!--onclick--]次</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <footer class="pagination wow fadeInDown">
+      [!--show.listpage--]
+    </footer>
+  </div>
+</div>
+<script src='[!--news.url--]skin/15/js/jquery.ias.min.js'></script>
+<!--底部开始-->
+[!--temp.footer--]
+<!--底部结束-->
+<div class="none">
+  <script src="[!--news.url--]skin/15/js/custom.js"></script>
+  <script src="[!--news.url--]skin/15/js/sticky-sidebar.js"></script>
+  <script src="[!--news.url--]skin/15/js/wow.min.js"></script>
+</div>
+</body>
+
+</html>
