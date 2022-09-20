@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta name="force-rendering" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<meta name="applicable-device" content="pc,mobile">
+<title>[!--pagetitle--] - <?=$public_r[sitename]?></title>
+<meta name="keywords" content="[!--pagekey--]" />
+<meta name="description" content="[!--pagedes--]" />
+<link rel="shortcut icon" href="[!--news.url--]skin/41/img/favicon.ico">
+<link rel="stylesheet" href="[!--news.url--]skin/41/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="[!--news.url--]skin/41/css/style.css" type="text/css">
+<!--[if lt IE 9]><div class="fuck-ie"><p class="tips">*您的IE浏览器版本过低，为获得更好的体验请使用Chrome、Firefox或其他现代浏览器!</p></div><![endif]-->
+<script src="[!--news.url--]skin/41/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+</head>
+<body>
+[!--temp.header--]
+<div class="breadnav pagenow card">
+  <div class="wrap"> <i class="fa fa-home"></i>[!--newsnav--]</div>
+</div>
+<div id="content" class="wrap">
+  <div id="contentleft">
+    <div id="imgbox">
+      <div class="">
+        <ul class="loglist">
+            [!--empirenews.listtemp--]<!--list.var1-->[!--empirenews.listtemp--]
+
+            <!--列表内容模板-->
+            <li class="con">
+                <div class="des">
+                    <a class="h2" href="[!--titleurl--]" title="[!--title--]">[!--title--]</a>
+                    <a href="[!--titleurl--]" title="[!--title--]" class="pic"><img class="img br img-cover" src="[!--titlepic--]" alt="[!--title--]"> </a>
+                    <div class="text">
+                        <p>[!--smalltext--]...</p>
+                        <p class="data">
+                            <span class="time"><i class="fa fa-clock-o"></i>[!--newstime--]</span>
+                            <span class="view"><i class="fa fa-eye"></i>[!--onclick--]</span>
+                        </p>
+                    </div>
+                </div>
+                <a href="[!--titleurl--]" title="[!--title--]" class="more" target="_blank" rel="nofollow">详细阅读<i class="fa fa-angle-right"></i></a>
+            </li>
+
+        </ul>
+      </div>
+    </div>
+    <ul class="pagebar">
+        [!--show.listpage--]
+    </ul>
+  </div>
+    <div id="sidebar">
+        <section id="aside_hot" class="widget widget_aside_hot sb br mb">
+            <h3><span>热门文章</span></h3>
+            <ul class="widget-content aside_hot">
+                [e:loop={"select * from [!db.pre!]ecms_news order by onclick desc limit 10",0,24,0}]
+                <li class="clearfix"><a href="<?=$bqr[titlepic]?:$public_r[newsurl].'e/data/images/notimg.gif'?>" title="<?=$bqr[title]?>"><?=$bqr[title]?></a></li>
+                [/e:loop]
+            </ul>
+        </section>
+
+        <section id="aside_new" class="widget widget_aside_new sb br mb">
+            <h3><span>推荐文章</span></h3>
+            <ul class="widget-content aside_new">
+                [e:loop={'1,2,3','0,10','newstime DESC'}]
+                <li class="clearfix"><i class="fa fa-caret-right"></i><a href="<?=$bqr[titleurl]?>" title="<?=$bqr[title]?>"><?=$bqr[title]?></a></li>
+                [/e:loop]
+            </ul>
+        </section>
+
+        <section id="divTags" class="widget widget_tags sb br mb">
+            <h3><span>标签列表</span></h3>
+            <div class="widget-content divTags">
+                [e:loop={"select * from [!db.pre!]enewstags order by tagid DESC limit 30",0,24,0}]
+                <li><a href="/tag/<?=$bqr['tagname']?>/" target="_blank"><?=$bqr['tagname']?></a></li>
+                [/e:loop]
+            </div>
+        </section>
+    </div>
+</div>
+
+[!--temp.footer--]
+</body>
+</html>

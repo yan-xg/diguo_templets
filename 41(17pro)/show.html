@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta name="force-rendering" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<meta name="applicable-device" content="pc,mobile">
+<title>[!--pagetitle--] - <?=$public_r[sitename]?></title>
+<meta name="keywords" content="[!--pagekey--]" />
+<meta name="description" content="[!--pagedes--]" />
+<link rel="shortcut icon" href="[!--news.url--]skin/41/img/favicon.ico">
+<link rel="stylesheet" href="[!--news.url--]skin/41/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="[!--news.url--]skin/41/css/style.css" type="text/css">
+<!--[if lt IE 9]><div class="fuck-ie"><p class="tips">*您的IE浏览器版本过低，为获得更好的体验请使用Chrome、Firefox或其他现代浏览器!</p></div><![endif]-->
+<script src="[!--news.url--]skin/41/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+</head>
+<body>
+[!--temp.header--]
+<div class="breadnav pagenow card">
+  <div class="wrap"> <i class="fa fa-home"></i>[!--newsnav--] </div>
+</div>
+<div class="wrap">
+  <div id="content">
+    <div id="contentleft">
+      <div class="logbox card">
+        <h1>[!--pagetitle--]</h1>
+        <div class="data"> <i class="fa fa-clock-o">[!--newstime--]</i> <i class="fa fa-eye">[!--onclick--]</i></div>
+        <div class="logcon">
+          <div class="art-main">
+              [!--newstext--]
+          </div>
+          <ul class="pagebar"></ul>
+          <br>
+          <p id="tag-wrap" class="tag-wrap"> <i class="fa fa-tags"></i> 标签：
+              <?php
+          $fr=$empire->fetch1("select infotags from {$dbtbpre}ecms_news_data_{$navinfor[stb]} where id=$navinfor[id]");
+              $infotags=$fr[infotags];
+              $tag='';
+              $t=explode(',',$infotags);
+              $d=count($t);
+              for($i=0;$i<$d;$i++)
+              {
+              if($t[$i])
+              {
+              $tagslink="/tag/".urlencode($t[$i])."/";
+              $tag.="<a href=$tagslink target=_blank>".$t[$i]."</a> ";
+              }
+              }
+              echo $tag;
+              ?></p>
+          <div class="nextlog"> 上一篇：[!--info.pre--] 下一篇：[!--info.next--] </div>
+          <div class="link-box">
+            <p class="title">相关文章</p>
+            <ul class="loglist">
+                [e:loop={'1,2,3',5,'newstime DESC'}]
+                <li class="con">
+                    <div class="des">
+                        <a class="h2" href="<?=$bqr[titleurl]?>" title="<?=$bqr[title]?>"><?=$bqr[title]?></a>
+                        <a href="<?=$bqr[titleurl]?>" title="<?=$bqr[title]?>" class="pic"><img class="img br img-cover" src="<?=$bqr[titlepic]?:$public_r[newsurl].'e/data/images/notimg.gif'?>" alt="<?=$bqr[title]?>"> </a>
+                        <div class="text">
+                            <p><?=$bqr[smalltext]?>...</p>
+                            <p class="data">
+                                <span class="time"><i class="fa fa-clock-o"></i><?=date('Y-m-d',$bqr[newstime])?></span>
+                                <span class="view"><i class="fa fa-eye"></i><?=$bqr[onclick]?></span>
+                            </p>
+                        </div>
+                    </div>
+                    <a href="<?=$bqr[titleurl]?>" title="<?=$bqr[title]?>" class="more" target="_blank" rel="nofollow">详细阅读<i class="fa fa-angle-right"></i></a>
+                </li>
+                [/e:loop]
+
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div id="sidebar">
+          <section id="aside_hot" class="widget widget_aside_hot sb br mb">
+              <h3><span>热门文章</span></h3>
+              <ul class="widget-content aside_hot">
+                  [e:loop={"select * from [!db.pre!]ecms_news order by onclick desc limit 10",0,24,0}]
+                  <li class="clearfix"><a href="<?=$bqr[titlepic]?:$public_r[newsurl].'e/data/images/notimg.gif'?>" title="<?=$bqr[title]?>"><?=$bqr[title]?></a></li>
+                  [/e:loop]
+              </ul>
+          </section>
+
+          <section id="aside_new" class="widget widget_aside_new sb br mb">
+              <h3><span>推荐文章</span></h3>
+              <ul class="widget-content aside_new">
+                  [e:loop={'1,2,3','5,10','newstime DESC'}]
+                  <li class="clearfix"><i class="fa fa-caret-right"></i><a href="<?=$bqr[titleurl]?>" title="<?=$bqr[title]?>"><?=$bqr[title]?></a></li>
+                  [/e:loop]
+              </ul>
+          </section>
+      </div>
+  </div>
+</div>
+[!--temp.footer--]
+</body>
+</html>

@@ -1,0 +1,39 @@
+<div id="footerbar">
+    <div class="wrap">
+        <span>
+            <a href="/"><?=$public_r[sitename]?></a>
+            <p>本站涵盖的内容、图片、视频等模板演示数据，部分未能与原作者取得联系。若涉及版权问题，请及时通知我们并提供相关证明材料，我们将及时予以删除！谢谢大家的理解与支持！</p>
+            <p>Copyright &copy;  2015-2022 版权所有 </p>
+        </span>
+    </div>
+</div>
+<div id="backtop"><span class="fa fa-chevron-circle-up"></span></div>
+<script src="[!--news.url--]skin/41/js/common.js" type="text/javascript"></script>
+<script src="[!--news.url--]skin/41/js/scrolltxt.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#croll").textSlider({
+            line: 1,
+            speed: 1000,
+            timer: 3000
+        });
+    })
+</script>
+<!--初始化Swiper-->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        centeredSlides: true,
+        autoplay: 3500,
+        slidesPerView: 1,
+        paginationClickable: true,
+        autoplayDisableOnInteraction: false,
+        spaceBetween: 0,
+        loop: true
+    });
+</script>
+<!--[if lt IE 9]><script src="[!--news.url--]skin/41/js/html5-css3.js"></script><![endif]-->
+<!--统计代码-->
+<div style="display:none">统计代码</div>
